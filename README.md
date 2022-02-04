@@ -10,7 +10,8 @@
 
 ## Link
 
-- Click this link to access repository: (https://fullstackneo.github.io/password-generator/)
+- Web App: https://fullstackneo.github.io/password-generator/
+- Repository: https://fullstackneo.github.io/password-generator/
 
 ## Skills
 
