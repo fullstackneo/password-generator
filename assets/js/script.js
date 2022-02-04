@@ -9,15 +9,15 @@ function generateCodeBase() {
   //UpperCase
   var pwBase = "";
   while (pwBase === "") {
-    if (window.confirm("Do you want to contain UpperCase?")) {
+    if (window.confirm("Do you want to contain uppercase?")) {
       pwBase += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
     //lowerCase
-    if (window.confirm("Do you want to contain lowerCase?")) {
+    if (window.confirm("Do you want to contain lowercase?")) {
       pwBase += "abcdefghijklmnopqrstuvwxyz";
     }
     //Special
-    if (window.confirm("Do you want to contain special letters?")) {
+    if (window.confirm("Do you want to contain special characters?")) {
       pwBase += " !#$%&\\\"'()*+,-./:;<=>?@[]^_`{|}~";
     }
     //number
@@ -35,10 +35,10 @@ function generateCodeBase() {
 function generatePassword() {
   //determine digit number of pw
   var num = 0;
-  num = prompt("How many digits of the password would you like to create?");
+  num = prompt("How many digits of the password would you like to create? Please enter a number between 8 and 128");
   // num has to be positive interger
   var r = /^\+?[1-9][0-9]*$/;
-  if (!r.test(num)) {
+  if (!r.test(num) || num < 8 || num > 128) {
     alert("You enter an invalid value");
     generatePassword();
   }
