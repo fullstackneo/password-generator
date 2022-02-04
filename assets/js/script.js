@@ -1,10 +1,9 @@
-// Assignment code here
-//generate random number
+//Function: to generate a random number
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-//generate the code base
+//Function: to generate the characterBase
 function generateCodeBase() {
   //UpperCase
   var pwBase = "";
@@ -31,19 +30,19 @@ function generateCodeBase() {
   return pwBase;
 }
 
-//main function to generate pw
+//Main Function: to generate pw
 function generatePassword() {
-  //determine digit number of pw
+  //determine pw length
   var num = 0;
   num = prompt("How many digits of the password would you like to create? Please enter a number between 8 and 128");
-  // num has to be positive interger
+  // num has to be positive interger between 8~128
   var r = /^\+?[1-9][0-9]*$/;
   if (!r.test(num) || num < 8 || num > 128) {
     alert("You enter an invalid value");
     generatePassword();
   }
 
-  // return CodeBase
+  // generate CodeBase
   var codeBase = generateCodeBase();
 
   //generate random code from the codeBase
