@@ -1,12 +1,22 @@
-# Password Generator Starter
+### Password Generator
+
+## Purpose
+
+- To generate a random password according to customers' preference like password length, including special characters, numberic letter, uppercase letter etc.
 
 ## Demo Screenshot
 
-![image](https://github.com/fullstackneo/Neo-Ji/blob/main/screenshots/screenshot.png)
+![image](https://github.com/fullstackneo/password-generator/blob/main/screenshots/screenshot.png)
 
 ## Link
 
-- Click this link to access: (https://fullstackneo.github.io/Neo-Ji/)
+- Click this link to access repository: (https://fullstackneo.github.io/password-generator/)
+
+## Skills
+
+- HTML
+- CSS
+- Javascript
 
 ## Contact Info
 
