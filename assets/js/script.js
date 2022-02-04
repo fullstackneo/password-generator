@@ -38,7 +38,7 @@ function generatePassword() {
   // num has to be positive interger between 8~128
   var r = /^\+?[1-9][0-9]*$/;
   if (!r.test(num) || num < 8 || num > 128) {
-    alert("You enter an invalid value");
+    alert("You entered an invalid value");
     generatePassword();
   }
 
